@@ -21,6 +21,8 @@ var prettyDate = require('./prettyDate');
 
 app.use(require('body-parser').json());
 
+app.io.set("transports", ["xhr-polling"]);
+
 app.io.route('post', function (req) {
   if (!req.data) {
     req.io.respond(errors.NO_DATA);
