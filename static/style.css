@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    text-align: center;
+    color: #efefef;
+    overflow: hidden;
+    background: #666 url(/static/images/photo-1414073875831-b47709631146.jpg) center no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    margin: 0 auto;
+    background: rgba(0,0,0,0.3);
+    padding-top: 63px;
+    padding-bottom: 56px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-scrolling: touch-scroll;
+}
+
+#secretSender {
+    margin-right: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 63px;
+    z-index: 1;
+}
+
+.secretInput {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: 0 none;
+    background: rgba(255,255,255,0.6);
+    color: #000;
+    height: 23px;
+}
+
+.secretInput:focus {
+    outline: 2px solid #000;
+}
+
+.secret-wrap {
+    margin: 40px 20px 0;
+}
+
+.secret {
+    font-size: 30px;
+    line-height: 140%;
+    word-wrap: break-word;
+    font-family: 'Special Elite', cursive;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.secret small {
+    font-size: 50%;
+    text-align: right;
+    display: block;
+    line-height: 60%;
+}
+
+footer {
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 10px;
+    background: rgba(255,255,255, 0.2);
+    padding: 10px 0;
+}
