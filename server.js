@@ -19,6 +19,8 @@ var app = express().http().io();
 
 var prettyDate = require('./prettyDate');
 
+app.use(express.compress());
+
 app.use(require('body-parser').json());
 
 app.io.set("transports", ["xhr-polling"]);
